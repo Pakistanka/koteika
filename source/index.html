@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  
+  <div class="content">
     <header class="header">
       <div class="wrapper">
         <div class="header__wrap">
@@ -27,369 +27,381 @@
         </div>
       </div>
     </header>
-
-  <main class="main">
-    <section class="select">
-      <h1 class="main__title">Наши номера</h1>
-      <div class="select__filter">
-        <select class="select__select">
-          <option value="item">все</option>
-          <option value="red">По площади</option>
-          <option value="blue">По площади</option>
-          <option value="green">По цене</option>
-          <option value="orange">По цене</option>
-          <option value="yellow">жёлтый</option>
-        </select>
-      </div>
-    </section>
-    <section class="main__content">
-      <aside class="filter">
-        <fieldset class="form__fieldset
-        form__fieldset--manufacturers">
-          <legend>Цена за сутки, &#8381;</legend>
-          <div class="form__wrap">
-            <label for="" class="form__range">
-              <span class="form__range--text">от</span>
-              <input type="text" placeholder="100">
-            </label>
-            <label for="" class="form__range">
-              <span class="form__range--text">до</span>
-              <input type="text" placeholder="600">
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset
-        form__fieldset--manufacturers">
-          <legend>Площадь</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="0,63м2"
-                     name="0,63м2"
-                     checked>
-              <label for="0,63м2"
-                     class="form__label
-                     form__label--manufacturers">0,63м2</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="0,90м2"
-                     name="0,90м2"
-                     checked>
-              <label for="0,90м2"
-                     class="form__label
-                     form__label--manufacturers">0,90м2</label>
-            </li>
-            <li class="form__item">
-              <input class=" form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="1,13м2"
-                     name="1,13м2"
-                     checked>
-              <label for="1,13м2"
-                     class="form__label
-                     form__label--manufacturers">1,13м2</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="1,56м2"
-                     name="1,56м2"
-                     checked>
-              <label for="1,56м2"
-                     class="form__label
-                     form__label--manufacturers">1,56м2</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="2,56м2"
-                     name="2,56м2"
-                     checked>
-              <label for="2,56м2"
-                     class="form__label
-                     form__label--manufacturers">2,56м2</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="2,88м2"
-                     name="2,88м2"
-                     checked>
-              <label for="2,88м2"
-                     class="form__label
-                     form__label--manufacturers">2,88м2</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="form__fieldset
-        form__fieldset--manufacturers">
-          <legend>Оснащение номера</legend>
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="nothing"
-                     name="nothing">
-              <label for="nothing"
-                     class="form__label
-                     form__label--manufacturers">Пустой номер</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="bed"
-                     name="bed"
-                     checked>
-              <label for="bed"
-                     class="form__label
-                     form__label--manufacturers">Лежак</label>
-            </li>
-            <li class="form__item">
-              <input class=" form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="claws"
-                     name="claws"
-                     checked>
-              <label for="claws"
-                     class="form__label
-                     form__label--manufacturers">Когтеточка</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="ball"
-                     name="ball"
-                     checked>
-              <label for="ball"
-                     class="form__label
-                     form__label--manufacturers">Игровой-комплекс</label>
-            </li>
-            <li class="form__item">
-              <input class="form__checkbox visually-hidden"
-                     type="checkbox"
-                     id="house"
-                     name="house"
-                     checked>
-              <label for="house"
-                     class="form__label
-                     form__label--manufacturers">Домик</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="form__button">Применить</button>
-        <button class="form__button form__button--white">Сбросить фильтр</button>
-      </aside>
-      <div class="cards">
-        <div class="cards__card">
-          <img src="./img/cat.jpeg" 
-          srcset="./img/cat@2x.png"
-          alt="cat" 
-          class="cards__image"
-          width="270px"
-          height="185px" 
-     >
-          <div class="cards__describtion">
-            <h2 class="cards__title">Эконом</h2>
-            <ul class="cards__list">
-              <li class="cards__elem hidden">Размеры (ШхГхВ) - </li>
-              <li class="cards__elem">Площадь - <span>&#160;0,63&#160;м<sup>2</sup></span></li>
-              <li class="cards__elem">Оснащение номера
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#nothing"></use>
-                </svg>
+  
+    <main class="main">
+      <section class="select">
+        <h1 class="main__title">Наши номера</h1>
+        <div class="select__filter">
+          <select class="select__select">
+            <option value="item">все</option>
+            <option value="red">По площади</option>
+            <option value="blue">По площади</option>
+            <option value="green">По цене</option>
+            <option value="orange">По цене</option>
+            <option value="yellow">жёлтый</option>
+          </select>
+        </div>
+      </section>
+      <section class="main__content">
+        <aside class="filter">
+          <fieldset class="form__fieldset
+          form__fieldset--manufacturers">
+            <legend>Цена за сутки, &#8381;</legend>
+            <div class="form__wrap">
+              <label for="" class="form__range">
+                <span class="form__range--text">от</span>
+                <input type="text" placeholder="100">
+              </label>
+              <label for="" class="form__range">
+                <span class="form__range--text">до</span>
+                <input type="text" placeholder="600">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset
+          form__fieldset--manufacturers">
+            <legend>Площадь</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="0,63м2"
+                       name="0,63м2"
+                       checked>
+                <label for="0,63м2"
+                       class="form__label
+                       form__label--manufacturers">0,63м2</label>
               </li>
-              <li class="cards__elem">Цена за сутки: 
-                <span class="cards__elem--price">&#160;100&#8381;</span>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="0,90м2"
+                       name="0,90м2"
+                       checked>
+                <label for="0,90м2"
+                       class="form__label
+                       form__label--manufacturers">0,90м2</label>
+              </li>
+              <li class="form__item">
+                <input class=" form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="1,13м2"
+                       name="1,13м2"
+                       checked>
+                <label for="1,13м2"
+                       class="form__label
+                       form__label--manufacturers">1,13м2</label>
+              </li>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="1,56м2"
+                       name="1,56м2"
+                       checked>
+                <label for="1,56м2"
+                       class="form__label
+                       form__label--manufacturers">1,56м2</label>
+              </li>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="2,56м2"
+                       name="2,56м2"
+                       checked>
+                <label for="2,56м2"
+                       class="form__label
+                       form__label--manufacturers">2,56м2</label>
+              </li>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="2,88м2"
+                       name="2,88м2"
+                       checked>
+                <label for="2,88м2"
+                       class="form__label
+                       form__label--manufacturers">2,88м2</label>
               </li>
             </ul>
-            <button class="cards__button">
-              <span class="cards__button--text">Забронировать</span>
-              <img src="./img/paw.svg" alt="" class="cards__button--image">
-            </button>
-          </div>
-        </div>
-        <div class="cards__card">
-          <img src="./img/catalog-img-2@2x.png" 
-               srcset="./img/catalog-img-2@4x.png"
-               alt="cat" 
-               class="cards__image"
-               width="270px"
-               height="185px" 
-          >
-          <div class="cards__describtion">
-            <h2 class="cards__title">Эконом плюс</h2>
-            <ul class="cards__list">
-              <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;90х100х180&#160;см</span></li>
-              <li class="cards__elem">Площадь - <span>&#160;0,90&#160;м<sup>2</sup></span></li>
-              <li class="cards__elem">Оснащение номера
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#bed"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#claws"></use>
-                </svg>
-
+          </fieldset>
+          <fieldset class="form__fieldset
+          form__fieldset--manufacturers">
+            <legend>Оснащение номера</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="nothing"
+                       name="nothing">
+                <label for="nothing"
+                       class="form__label
+                       form__label--manufacturers">Пустой номер</label>
               </li>
-              <li class="cards__elem">Цена за сутки: 
-                <span class="cards__elem--price">&#160;200&#8381;</span>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="bed"
+                       name="bed"
+                       checked>
+                <label for="bed"
+                       class="form__label
+                       form__label--manufacturers">Лежак</label>
               </li>
-            </ul>
-            <button class="cards__button">
-              <span class="cards__button--text">Забронировать</span>
-              <img src="./img/paw.svg" alt="" class="cards__button--image">
-            </button>
-          </div>
-        </div>
-        <div class="cards__card">
-          <img src="./img/catalog-img-3@2x.png" 
-               srcset="./img/catalog-img-3@4x.png"
-               alt="cat" 
-               class="cards__image"
-               width="270px"
-               height="185px" 
-          >
-          <div class="cards__describtion">
-            <h2 class="cards__title">Комфорт</h2>
-            <ul class="cards__list">
-              <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;100х125х180&#160;см</span></li>
-              <li class="cards__elem">Площадь - <span>&#160;1,13&#160;м<sup>2</sup></span></li>
-              <li class="cards__elem">Оснащение номера
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#bed"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#claws"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#ball"></use>
-                </svg>
+              <li class="form__item">
+                <input class=" form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="claws"
+                       name="claws"
+                       checked>
+                <label for="claws"
+                       class="form__label
+                       form__label--manufacturers">Когтеточка</label>
               </li>
-              <li class="cards__elem">Цена за сутки: 
-                <span class="cards__elem--price">&#160;250&#8381;</span>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="ball"
+                       name="ball"
+                       checked>
+                <label for="ball"
+                       class="form__label
+                       form__label--manufacturers">Игровой-комплекс</label>
+              </li>
+              <li class="form__item">
+                <input class="form__checkbox visually-hidden"
+                       type="checkbox"
+                       id="house"
+                       name="house"
+                       checked>
+                <label for="house"
+                       class="form__label
+                       form__label--manufacturers">Домик</label>
               </li>
             </ul>
-            <button class="cards__button">
-              <span class="cards__button--text">Забронировать</span>
-              <img src="./img/paw.svg" alt="" class="cards__button--image">
-            </button>
+          </fieldset>
+          <button class="form__button">Применить</button>
+          <button class="form__button form__button--white">Сбросить фильтр</button>
+        </aside>
+        <div class="cards">
+          <div class="cards__card">
+            <img src="./img/cat.jpeg" 
+            srcset="./img/cat@2x.png"
+            alt="cat" 
+            class="cards__image"
+            width="270px"
+            height="185px" 
+       >
+            <div class="cards__describtion">
+              <h2 class="cards__title">Эконом</h2>
+              <ul class="cards__list">
+                <li class="cards__elem hidden">Размеры (ШхГхВ) - </li>
+                <li class="cards__elem">Площадь - <span>&#160;0,63&#160;м<sup>2</sup></span></li>
+                <li class="cards__elem">Оснащение номера
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#nothing"></use>
+                  </svg>
+                </li>
+                <li class="cards__elem">Цена за сутки: 
+                  <span class="cards__elem--price">&#160;100&#8381;</span>
+                </li>
+              </ul>
+              <button class="cards__button">
+                <span class="cards__button--text">Забронировать</span>
+                <img src="./img/paw.svg" alt="" class="cards__button--image">
+              </button>
+            </div>
+          </div>
+          <div class="cards__card">
+            <img src="./img/catalog-img-2@2x.png" 
+                 srcset="./img/catalog-img-2@4x.png"
+                 alt="cat" 
+                 class="cards__image"
+                 width="270px"
+                 height="185px" 
+            >
+            <div class="cards__describtion">
+              <h2 class="cards__title">Эконом плюс</h2>
+              <ul class="cards__list">
+                <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;90х100х180&#160;см</span></li>
+                <li class="cards__elem">Площадь - <span>&#160;0,90&#160;м<sup>2</sup></span></li>
+                <li class="cards__elem">Оснащение номера
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#bed"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#claws"></use>
+                  </svg>
+  
+                </li>
+                <li class="cards__elem">Цена за сутки: 
+                  <span class="cards__elem--price">&#160;200&#8381;</span>
+                </li>
+              </ul>
+              <button class="cards__button">
+                <span class="cards__button--text">Забронировать</span>
+                <img src="./img/paw.svg" alt="" class="cards__button--image">
+              </button>
+            </div>
+          </div>
+          <div class="cards__card">
+            <img src="./img/catalog-img-3@2x.png" 
+                 srcset="./img/catalog-img-3@4x.png"
+                 alt="cat" 
+                 class="cards__image"
+                 width="270px"
+                 height="185px" 
+            >
+            <div class="cards__describtion">
+              <h2 class="cards__title">Комфорт</h2>
+              <ul class="cards__list">
+                <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;100х125х180&#160;см</span></li>
+                <li class="cards__elem">Площадь - <span>&#160;1,13&#160;м<sup>2</sup></span></li>
+                <li class="cards__elem">Оснащение номера
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#bed"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#claws"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#ball"></use>
+                  </svg>
+                </li>
+                <li class="cards__elem">Цена за сутки: 
+                  <span class="cards__elem--price">&#160;250&#8381;</span>
+                </li>
+              </ul>
+              <button class="cards__button">
+                <span class="cards__button--text">Забронировать</span>
+                <img src="./img/paw.svg" alt="" class="cards__button--image">
+              </button>
+            </div>
+          </div>
+          <div class="cards__card">
+            <img src="./img/catalog-img-4@2x.png" 
+                 srcset="./img/catalog-img-4@4x.png"
+                 alt="cat" 
+                 class="cards__image"
+                 width="270px"
+                 height="185px" 
+            >
+            <div class="cards__describtion">
+              <h2 class="cards__title">Сьют</h2>
+              <ul class="cards__list">
+                <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;125х125х180&#160;см</span></li>
+                <li class="cards__elem">Площадь - <span>&#160;1,56&#160;м<sup>2</sup></span></li>
+                <li class="cards__elem">Оснащение номера
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#bed"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#claws"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#ball"></use>
+                  </svg>
+                </li>
+                <li class="cards__elem">Цена за сутки: 
+                  <span class="cards__elem--price">&#160;350&#8381;</span>
+                </li>
+              </ul>
+              <button class="cards__button">
+                <span class="cards__button--text">Забронировать</span>
+                <img src="./img/paw.svg" alt="" class="cards__button--image">
+              </button>
+            </div>
+          </div>
+          <div class="cards__card">
+            <img src="./img/catalog-img-5@2x.png" 
+                 srcset="./img/catalog-img-5@4x.png"
+                 alt="cat" 
+                 class="cards__image"
+                 width="270px"
+                 height="185px" 
+            >
+            <div class="cards__describtion">
+              <h2 class="cards__title">Люкс</h2>
+              <ul class="cards__list">
+                <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;160х160х180&#160;см</span></li>
+                <li class="cards__elem">Площадь - <span>&#160;2,56&#160;м<sup>2</sup></span></li>
+                <li class="cards__elem">Оснащение номера
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#bed"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#claws"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#ball"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#house"></use>
+                  </svg>
+                </li>
+                <li class="cards__elem">Цена за сутки: 
+                  <span class="cards__elem--price">&#160;500&#8381;</span>
+                </li>
+              </ul>
+              <button class="cards__button">
+                <span class="cards__button--text">Забронировать</span>
+                <img src="./img/paw.svg" alt="" class="cards__button--image">
+              </button>
+            </div>
+          </div>
+          <div class="cards__card">
+            <img src="./img/catalog-img-6@2x.png" 
+                 srcset="./img/catalog-img-6@4x.png"
+                 alt="cat" 
+                 class="cards__image"
+                 width="270px"
+                 height="185px" 
+            >
+            <div class="cards__describtion">
+              <h2 class="cards__title">Супер-Люкс</h2>
+              <ul class="cards__list">
+                <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;180х160х180&#160;см</span></li>
+                <li class="cards__elem">Площадь - <span>&#160;2,88&#160;м<sup>2</sup></span></li>
+                <li class="cards__elem">Оснащение номера
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#bed"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#claws"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#ball"></use>
+                  </svg>
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#house"></use>
+                  </svg>
+                </li>
+                <li class="cards__elem">Цена за сутки: 
+                  <span class="cards__elem--price">&#160;600&#8381;</span>
+                </li>
+              </ul>
+              <button class="cards__button">
+                <span class="cards__button--text">Забронировать</span>
+                <img src="./img/paw.svg" alt="" class="cards__button--image">
+              </button>
+            </div>
           </div>
         </div>
-        <div class="cards__card">
-          <img src="./img/catalog-img-4@2x.png" 
-               srcset="./img/catalog-img-4@4x.png"
-               alt="cat" 
-               class="cards__image"
-               width="270px"
-               height="185px" 
-          >
-          <div class="cards__describtion">
-            <h2 class="cards__title">Сьют</h2>
-            <ul class="cards__list">
-              <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;125х125х180&#160;см</span></li>
-              <li class="cards__elem">Площадь - <span>&#160;1,56&#160;м<sup>2</sup></span></li>
-              <li class="cards__elem">Оснащение номера
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#bed"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#claws"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#ball"></use>
-                </svg>
-              </li>
-              <li class="cards__elem">Цена за сутки: 
-                <span class="cards__elem--price">&#160;350&#8381;</span>
-              </li>
-            </ul>
-            <button class="cards__button">
-              <span class="cards__button--text">Забронировать</span>
-              <img src="./img/paw.svg" alt="" class="cards__button--image">
-            </button>
-          </div>
-        </div>
-        <div class="cards__card">
-          <img src="./img/catalog-img-5@2x.png" 
-               srcset="./img/catalog-img-5@4x.png"
-               alt="cat" 
-               class="cards__image"
-               width="270px"
-               height="185px" 
-          >
-          <div class="cards__describtion">
-            <h2 class="cards__title">Люкс</h2>
-            <ul class="cards__list">
-              <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;160х160х180&#160;см</span></li>
-              <li class="cards__elem">Площадь - <span>&#160;2,56&#160;м<sup>2</sup></span></li>
-              <li class="cards__elem">Оснащение номера
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#bed"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#claws"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#ball"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#house"></use>
-                </svg>
-              </li>
-              <li class="cards__elem">Цена за сутки: 
-                <span class="cards__elem--price">&#160;500&#8381;</span>
-              </li>
-            </ul>
-            <button class="cards__button">
-              <span class="cards__button--text">Забронировать</span>
-              <img src="./img/paw.svg" alt="" class="cards__button--image">
-            </button>
-          </div>
-        </div>
-        <div class="cards__card">
-          <img src="./img/catalog-img-6@2x.png" 
-               srcset="./img/catalog-img-6@4x.png"
-               alt="cat" 
-               class="cards__image"
-               width="270px"
-               height="185px" 
-          >
-          <div class="cards__describtion">
-            <h2 class="cards__title">Супер-Люкс</h2>
-            <ul class="cards__list">
-              <li class="cards__elem">Размеры (ШхГхВ) - <span>&#160;180х160х180&#160;см</span></li>
-              <li class="cards__elem">Площадь - <span>&#160;2,88&#160;м<sup>2</sup></span></li>
-              <li class="cards__elem">Оснащение номера
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#bed"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#claws"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#ball"></use>
-                </svg>
-                <svg class="icon">
-                  <use xlink:href="./img/sprite.svg#house"></use>
-                </svg>
-              </li>
-              <li class="cards__elem">Цена за сутки: 
-                <span class="cards__elem--price">&#160;600&#8381;</span>
-              </li>
-            </ul>
-            <button class="cards__button">
-              <span class="cards__button--text">Забронировать</span>
-              <img src="./img/paw.svg" alt="" class="cards__button--image">
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
+  
   <footer class="footer">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="footer__wrap">
+        <div class="footer__copyright">
+          <span class="footer__copyright--text">&#169; 2020 Все права защищены</span>
+          <span class="footer__copyright--text">Политика конфиденциальности</span>
+        </div>
+        <div class="footer__creator">
+          Сделано в <a href="#" class="footer__link">&#160;Koteyka_Production</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
 
