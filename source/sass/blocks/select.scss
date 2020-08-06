@@ -4,8 +4,129 @@
     align-items: center;
 }
 .select__filter {
-
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 174px;
 }
-.select__select {
 
+
+.select-dropdown {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+    margin: 0;
+    
+    font-family: "Lato", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: $black;
+	
+	&:last-child {
+		margin-right: 0px;
+	}
+
+	&__button {
+		padding: 10px 5px 10px 15px;
+		background-color: #fff;
+		color: #616161;
+		border: 1px solid #cecece;
+		border-radius: 3px;
+		cursor: pointer;
+		width: 174px;
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+		&:focus {
+			outline: none;
+        }
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 5px;
+            background-image: url("../../img/arrow.svg");
+            background-repeat: no-repeat;
+            margin-left: 10px; 
+            transform: rotate(180deg);
+        }
+
+		.zmdi-chevron-down {
+			position: absolute;
+			right: 10px;
+			top: 12px;
+		}
+	}
+
+	&__list {
+		position: absolute;
+		display: block;
+		left: 0;
+		right: 0;
+		max-height: 300px;
+		overflow: auto;
+		margin: 0;
+		padding: 0;
+		border: 1px solid #cecece;
+		border-top: 0px solid transparent;
+		list-style-type: none;
+		opacity: 0;
+		pointer-events: none;
+		transform-origin: top left;
+		transform: scale(1,0);
+		transition: all ease-in-out .3s;
+		z-index: 2;
+
+		&.active {
+			opacity: 1;
+			pointer-events: auto;
+			transform: scale(1,1);
+
+		}
+	}
+	&__list-item {
+		display: block;
+		list-style-type: none;
+		padding: 10px 15px;
+		background: #fff;
+		font-size: 14px;
+		line-height: 1.4;
+		cursor: pointer;
+		color: #616161;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: all ease-in-out .3s;
+        
+        &:first-child::before,
+        &:nth-child(3)::before {
+            content: "";
+            display: block;
+            width: 7px;
+            height: 10px;
+            background-image: url("../../img/long-arrow.svg");
+            background-repeat: no-repeat;
+            margin-right: 10px;
+        }
+        &:nth-child(2)::before,
+        &:last-child::before {
+            content: "";
+            display: block;
+            width: 7px;
+            height: 10px;
+            background-image: url("../../img/long-arrow.svg");
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            transform: rotateX(180deg);
+        }
+
+		&:hover {
+			background-color: $grey;
+			// color: #fff;
+			transition: all ease-in-out .3s;
+		}
+	}
 }

@@ -10,8 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="content">
+<body class="body">
+
     <header class="header">
       <div class="wrapper">
         <div class="header__wrap">
@@ -19,10 +19,10 @@
             <img src="./img/logo.png" alt="Logo" width="64" height="52px">
           </a>
           <nav class="header__nav">
-            <li class="header__elem">Почему мы?</li>
-            <li class="header__elem">Номера</li>
-            <li class="header__elem">Отзывы</li>
-            <li class="header__elem">Как нас найти</li>
+            <li class="header__elem"><a href="#" class="header__elem--link">Почему мы?</a></li>
+            <li class="header__elem"><a href="#" class="header__elem--link">Номера</a></li>
+            <li class="header__elem"><a href="#" class="header__elem--link">Отзывы</a></li>
+            <li class="header__elem"><a href="#" class="header__elem--link">Как нас найти</a></li>
           </nav>
         </div>
       </div>
@@ -32,21 +32,21 @@
       <section class="select">
         <h1 class="main__title">Наши номера</h1>
         <div class="select__filter">
-          <select class="select__select">
-            <option value="item">все</option>
-            <option value="red">По площади</option>
-            <option value="blue">По площади</option>
-            <option value="green">По цене</option>
-            <option value="orange">По цене</option>
-            <option value="yellow">жёлтый</option>
+          <select id="normal-select-1">
+            <option value="1" class="select-dropdown__list-item select__icon" selected>По площади</option>
+            <option value="2" class="select-dropdown__list-item select__icon">По площади</option>
+            <option value="3" class="select-dropdown__list-item select__icon">По цене</option>
+            <option value="4" class="select-dropdown__list-item select__icon">По цене</option>
           </select>
         </div>
       </section>
       <section class="main__content">
+
         <aside class="filter">
+
           <fieldset class="form__fieldset
           form__fieldset--manufacturers">
-            <legend>Цена за сутки, &#8381;</legend>
+            <legend class="form__fieldset--title">Цена за сутки, &#8381;</legend>
             <div class="form__wrap">
               <label for="" class="form__range">
                 <span class="form__range--text">от</span>
@@ -58,132 +58,70 @@
               </label>
             </div>
           </fieldset>
+
           <fieldset class="form__fieldset
           form__fieldset--manufacturers">
             <legend>Площадь</legend>
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="0,63м2"
-                       name="0,63м2"
-                       checked>
-                <label for="0,63м2"
-                       class="form__label
-                       form__label--manufacturers">0,63м2</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="flat063" value="flat063" name="size">
+                <label for="flat063" class="form__label form__label--manufacturers">0,63м2</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="0,90м2"
-                       name="0,90м2"
-                       checked>
-                <label for="0,90м2"
-                       class="form__label
-                       form__label--manufacturers">0,90м2</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="flat090" value="flat090" name="size">
+                <label for="flat090" class="form__label form__label--manufacturers">0,90м2</label>
               </li>
               <li class="form__item">
-                <input class=" form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="1,13м2"
-                       name="1,13м2"
-                       checked>
-                <label for="1,13м2"
-                       class="form__label
-                       form__label--manufacturers">1,13м2</label>
+                <input class=" form__checkbox visually-hidden" type="checkbox" id="flat113" value="flat113" name="size">
+                <label for="flat113" class="form__label form__label--manufacturers">1,13м2</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="1,56м2"
-                       name="1,56м2"
-                       checked>
-                <label for="1,56м2"
-                       class="form__label
-                       form__label--manufacturers">1,56м2</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="flat156" value="flat156" name="size">
+                <label for="flat156" class="form__label form__label--manufacturers">1,56м2</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="2,56м2"
-                       name="2,56м2"
-                       checked>
-                <label for="2,56м2"
-                       class="form__label
-                       form__label--manufacturers">2,56м2</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="flat256" value="flat256" name="size">
+                <label for="flat256" class="form__label form__label--manufacturers">2,56м2</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="2,88м2"
-                       name="2,88м2"
-                       checked>
-                <label for="2,88м2"
-                       class="form__label
-                       form__label--manufacturers">2,88м2</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="flat288" value="flat288" name="size">
+                <label for="flat288" class="form__label form__label--manufacturers">2,88м2</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset
-          form__fieldset--manufacturers">
+
+          <fieldset class="form__fieldset form__fieldset--manufacturers">
             <legend>Оснащение номера</legend>
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="nothing"
-                       name="nothing">
-                <label for="nothing"
-                       class="form__label
-                       form__label--manufacturers">Пустой номер</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="nothing" value="nothing" name="facility">
+                <label for="nothing" class="form__label form__label--manufacturers">Пустой номер</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="bed"
-                       name="bed"
-                       checked>
-                <label for="bed"
-                       class="form__label
-                       form__label--manufacturers">Лежак</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="bed" value="bed" name="facility">
+                <label for="bed" class="form__label form__label--manufacturers">Лежак</label>
               </li>
               <li class="form__item">
-                <input class=" form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="claws"
-                       name="claws"
-                       checked>
-                <label for="claws"
-                       class="form__label
-                       form__label--manufacturers">Когтеточка</label>
+                <input class=" form__checkbox visually-hidden" type="checkbox" id="claws" value="claws" name="facility">
+                <label for="claws" class="form__label form__label--manufacturers">Когтеточка</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="ball"
-                       name="ball"
-                       checked>
-                <label for="ball"
-                       class="form__label
-                       form__label--manufacturers">Игровой-комплекс</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="ball" value="ball" name="facility">
+                <label for="ball" class="form__label form__label--manufacturers">Игровой-комплекс</label>
               </li>
               <li class="form__item">
-                <input class="form__checkbox visually-hidden"
-                       type="checkbox"
-                       id="house"
-                       name="house"
-                       checked>
-                <label for="house"
-                       class="form__label
-                       form__label--manufacturers">Домик</label>
+                <input class="form__checkbox visually-hidden" type="checkbox" id="house" value="house" name="facility">
+                <label for="house" class="form__label form__label--manufacturers">Домик</label>
               </li>
             </ul>
           </fieldset>
+
           <button class="form__button">Применить</button>
           <button class="form__button form__button--white">Сбросить фильтр</button>
         </aside>
+
         <div class="cards">
-          <div class="cards__card">
+          <div class="cards__card flat063 nothing ">
             <img src="./img/cat.jpeg" 
             srcset="./img/cat@2x.png"
             alt="cat" 
@@ -211,7 +149,7 @@
               </button>
             </div>
           </div>
-          <div class="cards__card">
+          <div class="cards__card flat090 claws bed">
             <img src="./img/catalog-img-2@2x.png" 
                  srcset="./img/catalog-img-2@4x.png"
                  alt="cat" 
@@ -243,7 +181,7 @@
               </button>
             </div>
           </div>
-          <div class="cards__card">
+          <div class="cards__card flat113 claws bed ball">
             <img src="./img/catalog-img-3@2x.png" 
                  srcset="./img/catalog-img-3@4x.png"
                  alt="cat" 
@@ -277,7 +215,7 @@
               </button>
             </div>
           </div>
-          <div class="cards__card">
+          <div class="cards__card flat156 claws bed ball">
             <img src="./img/catalog-img-4@2x.png" 
                  srcset="./img/catalog-img-4@4x.png"
                  alt="cat" 
@@ -311,7 +249,7 @@
               </button>
             </div>
           </div>
-          <div class="cards__card">
+          <div class="cards__card flat256 claws bed ball house">
             <img src="./img/catalog-img-5@2x.png" 
                  srcset="./img/catalog-img-5@4x.png"
                  alt="cat" 
@@ -348,7 +286,7 @@
               </button>
             </div>
           </div>
-          <div class="cards__card">
+          <div class="cards__card claws bed ball flat288 house">
             <img src="./img/catalog-img-6@2x.png" 
                  srcset="./img/catalog-img-6@4x.png"
                  alt="cat" 
@@ -388,24 +326,25 @@
         </div>
       </section>
     </main>
-  </div>
   
-  <footer class="footer">
-    <div class="wrapper">
-      <div class="footer__wrap">
-        <div class="footer__copyright">
-          <span class="footer__copyright--text">&#169; 2020 Все права защищены</span>
-          <span class="footer__copyright--text">Политика конфиденциальности</span>
-        </div>
-        <div class="footer__creator">
-          Сделано в <a href="#" class="footer__link">&#160;Koteyka_Production</a>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__wrap">
+          <div class="footer__copyright">
+            <span class="footer__copyright--text">&#169; 2020 Все права защищены</span>
+            <span class="footer__copyright--text">Политика конфиденциальности</span>
+          </div>
+          <div class="footer__creator">
+            Сделано в <a href="#" class="footer__link">&#160;Koteyka_Production</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <script src="../source/js/script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/filter.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   <script src="js/svg4everybody.js"></script>
   <script>svg4everybody();</script>
   <script src="js/picturefill.js"></script>
